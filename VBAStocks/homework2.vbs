@@ -59,8 +59,7 @@ Sub StockSummary()
         If Open_Price <> 0 Then
             Delta_Percent = Delta_Price / Open_Price
         Else
-          ' Unlikely, but it needs to be checked to avoid program crushing
-            MsgBox ("For " & Ticker_Name & ", Row " & Str(i) & ": Open Price =" & Open_Price & ". Fix <open> field manually and save the spreadsheet.")
+            MsgBox ("Error in Cell C" & Str(i))
         End If
 
 
